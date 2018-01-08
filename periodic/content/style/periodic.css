@@ -1,0 +1,148 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+/*    position: relative;*/
+    align-items: center;
+    background: #dde8e8;
+}
+main {
+    position: relative;
+    font-weight: bold;
+    margin: 0 auto;
+}
+article {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+/*    border: 1px solid red;*/
+}
+section {
+    height: 50px;
+    width: 50px;
+    float: left;
+    text-align: center;
+    border: 1px solid;
+    margin: 0 2.5px;
+    align-self: center;
+}
+ruby {
+    height: 30px;
+    width: 50px;
+    
+    display: block;
+}
+rb, rt {
+    height: 15px;
+    width: 35px;
+    
+    display: block;
+}
+rt {
+    text-align: right;
+}
+samp {
+    font-size: 6px;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+ins {
+    font-size: 6px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.empty, .empty1 {
+    border: none;
+    display: flex;
+    flex: auto;
+}
+.empty2, empty3 {
+    visibility: hidden;
+}
+kbd {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+strike {
+    height: 40px;
+    width: 78px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 25px 10px 0 10px;
+}
+.alkali {
+    background: #f8ab92;
+    border-color: #ef434b;
+}
+.alkaline {
+    background: #fed191;
+    border-color: #de8d1a;
+}
+.transition {
+    background: #f6f398;
+    border-color: #c0d00b;
+}
+.basic {
+    background: #a8d698;
+    border-color: #35791d; 
+}
+.semimetal {
+   background: #a7dee8;
+   border-color: #00ffff;
+}
+.nonmetal {
+   background: #a0add7;
+   border-color: #0f234e;
+}
+.halogen {
+   background: #cd9fca;
+   border-color: #73126d;
+}
+.noble {
+   background: #ceaecc;
+   border-color: #73126d; 
+}
+.lanthanida {
+    background: #ee9fc5;
+    border-color: #e24f96;
+}
+.actinade {
+    background: #e2a9cd;
+    border-color: #e24f96;
+}
+
+.box {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 150px;
+    zoom: 2.4;
+}
+marquee {
+    width: 52px;
+    position: relative;
+    top: -110px;
+    left: 117px;
+    overflow: visible;
+    white-space: unset;
+}
+.lastchild {
+    position: absolute;
+    z-index: 2;
+}
+.big {
+    transform: scale(1.2);
+}
+.small {
+    transform: scale(1);
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href=""/>
+<link rel="stylesheet" href="content/style/periodic.css"/>
+<title>Periodic</title>
+<!--<script src="content/js/periodic.js"></script>-->
+<script src="content/js/jquery.js"></script>
+<script src="content/js/array.js"></script>
+</head>
+<body>
+    <script>
+        
+function createTable(options)
+{
+	var $main = $('<main>'),
+        $marquee = $('<marquee>'),
+        matrix = options.data.matrix,
+        slots = options.data.slots,
+        $div = $('<div>')
+            .appendTo($main)
+            .attr('id', 'container')
+            .className = 'box';
+    
+    options.parent.append($main);
+	
+    options.parent = $main;
+    
+	for( let i = 0; i < matrix.length; i++)
+	{
+        options.data = matrix[i];
+        
+        if (matrix.length - i < 3) {
+            options.parent = $marquee;
+        
+        }
+       
+            createRow(options, $div);
+	}
+    options.data = slots;
+    options.parent = $main;
+    
+    $marquee.appendTo(options.parent);
+    
+    createPanel(options);
+    
+}
+
+function createRow(options, $div)
+{
+	var $article = $('<article>');
+	options.parent.append($article);
+	var data = options.data;
+
+	for( let i = 0; i < data.length; i++)
+	{
+		options = data[i];
+		options.parent = $article;
+		createTile(options, $div);
+	}
+
+}
+ 
+function createTile(options, $div)
+{
+	var $section, $ruby, $rb, $rt, $samp, $ins;
+    $section = $('<section>');
+    
+    if(undefined === options.name)
+        {
+            $section.className = options.className;
+        }
+    else {
+            $rt = $('<rt>')
+    	.text(options.number);
+    
+    $rb = $('<rb>')
+    	.text(options.abbr)
+    	.attr('title', options.latinName);
+	        
+    $ruby = $('<ruby>')
+    	.append($rt)
+        .append($rb);
+    
+    $samp = $('<samp>')
+    	.text(options.name);
+    
+    $ins = $('<ins>')
+    	.text(options.weight);
+
+    $section = $('<section>')
+        
+        .append($ruby, $samp, $ins);
+
+        $section.className = options.elementClassName;
+    }
+    var $clone = $('#container');
+    
+ $section.on('mouseenter', function(e) {
+     var appear = e.target.cloneNode(true);
+     
+     $clone.html('')
+       .append(appear);
+     
+     var $name = (options.abbr) + ', ' + (options.name) + ', ' + (options.number) + ', ' + (options.weight);
+     var style = getComputedStyle(this);
+     console.log('%c' + $name, 'background-color: ' + style.backgroundColor);
+    });    
+    options.parent.append($section);
+}
+        
+function createPanel(options)
+{
+    var $kbd = $('<kbd>') 
+        .appendTo(options.parent);
+    var data = options.data;
+    
+    for(let i = 0; i < options.data.length; i++){
+        var slotOptions = data[i];
+        slotOptions.parent = $kbd;
+        
+        new createSlot(slotOptions);
+    }
+    var $div = $('<div>')
+        .text('')
+        .appendTo(document.body);
+    
+    $div.className = 'box';
+}
+var lastclicked = '';
+function createSlot(options)
+{
+    var $strike = $('<strike>') 
+            .text(options.slotName)
+            .appendTo(options.parent)
+            .addClass(options.elementClassName);
+    
+    $strike.on('click', function(){ 
+        if (lastclicked != ''){
+            var elements = $('.' + lastclicked);
+            for (let i = 0; i < elements.length; i++){
+            elements[i]
+              .toggleClass('small');
+            } 
+        }
+        var sectionClassName = options.elementClassName;
+        lastclicked = sectionClassName;
+        
+        var elements = $('.' + sectionClassName);
+        for (let i = 0; i < elements.length; i++){
+            elements[i]
+            .toggleClass('big');
+        }
+    });
+            
+  };
+        
+createTable({ parent: document.body, data: source });
+</script>
+</body>
+</html>
