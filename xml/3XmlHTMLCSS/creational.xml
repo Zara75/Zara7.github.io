@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../3XmlHTMLCSS/content/creational.css"?>
+<!DOCTYPE pattern>
+<body>
+<main xmlns:html="http://www.w3.org/1999/xhtml">
+<rosie>
+    <html:title>Creational patterns</html:title>
+</rosie>
+    <div>
+    <table>
+        <caption>Creational Patterns</caption>
+        <tr>
+            <heading>Name</heading>
+            <heading>Description</heading>
+            <heading>In Design Patterns</heading>
+            <heading>In Code Complete</heading>
+            <heading>Other</heading>
+        </tr>
+        <tr>
+            <name><html:a href="https://en.wikipedia.org/wiki/Abstract_factory_pattern" target="blanck">Abstract factory</html:a></name>
+            <description>Provide an interface for creating families of related or dependent objects without specifying their concrete classes.</description>
+            <yes>Yes</yes>
+            <yes>Yes</yes>
+            <other>N/A</other>
+        </tr>
+        <tr>
+            <name><html:a href="https://en.wikipedia.org/wiki/Builder_pattern" target="blanck">Builder</html:a></name>
+            <description>Separate the construction of a complex object from its representation, allowing the same construction process to create various representations.</description>
+            <yes>Yes</yes>
+            <no>No</no>
+            <other>N/A</other>
+        </tr>
+        <tr>
+            <name><html:a href="https://en.wikipedia.org/wiki/Dependency_injection" target="blanck">Dependency Injection</html:a></name>
+            <description>A class accepts the objects it requires from an injector instead of creating the objects directly.</description>
+            <no>No</no>
+            <no>No</no>
+            <other>N/A</other>
+        </tr>
+        <tr>
+            <name><html:a href="https://en.wikipedia.org/wiki/Factory_method_pattern" target="blanck">Factory method</html:a></name>
+            <description>Define an interface for creating a single object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses (dependency injection[19]).</description>
+            <yes>Yes</yes>
+            <yes>Yes</yes>
+            <other>N/A</other>
+        </tr>
+        <tr>
+            <name><html:a href="https://en.wikipedia.org/wiki/Lazy_initialization" target="blanck">Lazy initialization</html:a></name>
+            <description>Tactic of delaying the creation of an object, the calculation of a value, or some other expensive process until the first time it is needed. This pattern appears in the GoF catalog as "virtual proxy", an implementation strategy for the Proxy pattern.</description>
+            <yes>Yes</yes>
+            <no>No</no>
+            <text>PoEAA</text>
+        </tr>
+        <tr>
+            <name><html:a href="https://en.wikipedia.org/wiki/Multiton_pattern" target="blanck">Multiton</html:a></name>
+            <description>Ensure a class has only named instances, and provide a global point of access to them.</description>
+            <no>No</no>
+            <no>No</no>
+            <other>N/A</other>
+        </tr>
+        <tr>
+            <name><html:a href="https://en.wikipedia.org/wiki/Object_pool_pattern" target="blanck">Object pool</html:a></name>
+            <description>Avoid expensive acquisition and release of resources by recycling objects that are no longer in use. Can be considered a generalisation of connection pool and thread pool patterns.</description>
+            <no>No</no>
+            <no>No</no>
+            <other>N/A</other>
+        </tr>
+        <tr>
+            <name><html:a href="https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization" target="blanck">Resource acquisition is initialization (RAII)</html:a></name>
+            <description>Ensure that resources are properly released by tying them to the lifespan of suitable objects.</description>
+            <no>No</no>
+            <no>No</no>
+            <other>N/A</other>
+        </tr>
+        <tr>
+            <name><html:a href="https://en.wikipedia.org/wiki/Singleton_pattern" target="blanck">Singleton</html:a></name>
+            <description>Ensure a class has only one instance, and provide a global point of access to it.</description>
+            <yes>Yes</yes>
+            <yes>Yes</yes>
+            <other>N/A</other>
+        </tr>
+    </table>
+    </div>
+    </main>
+</body>
