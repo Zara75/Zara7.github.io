@@ -72,24 +72,17 @@ $(()=> {
 });
 function getColor(x, y){
     var canvas = document.createElement('canvas');
-    document.getElementById('try').appendChild(canvas);
-    var ctx = canvas.getContext("2d");
-    var my_gradient = ctx.createLinearGradient(0, 0, 500, 0);
-    my_gradient.addColorStop(0, "#9f11a3");
-    my_gradient.addColorStop(0.5, "#e9dfb8");
-    my_gradient.addColorStop(1, "#54a4b7");
-    ctx.fillStyle = my_gradient;
-    ctx.fillRect(0, 0, 400, 20);
+    var ctx=canvas.getContext("2d");
+    ctx.fillStyle = $('.ui-slider-handle').css("background");
     //apply width and heigh 1px
     var pixelData = ctx.getImageData(x, y, 1, 1).data;
     return hexc(pixelData);
 }
 function hexc(parts) {
-    var hexColor = '';
     for (var i = 0; i <= 2; ++i) {
         parts[i] = parseInt(parts[i]).toString(16);
-        hexColor += (!parts[i].length || parts[i].length == 1) ? '0' + parts[i] : parts[i];
+        if (parts[i].length == 1) parts[i] = '0' + parts[i];
     }
-    color = '#' + hexColor;
+    color = '#' + parts.join('');
     return color;
 }

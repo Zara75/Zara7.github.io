@@ -14,9 +14,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 0;
-    left: 0;
-    position: relative;
 }
 .ui-slider, .ui-slider .slider-range-inverse, .ui-slider .ui-slider-range {
   height: 14px;
@@ -24,7 +21,7 @@ body {
   border-width: 0;
 }
 #slider-container {
-  width: 1000px;
+  width: 70%;
   height: 80px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -97,9 +94,4 @@ body {
       color: #333;
       background: #fff;
       box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
-}
-#try {
-    position: absolute;
-    top: 383px;
-    left: 600.5px;
 }
