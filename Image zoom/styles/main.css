@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    overflow: hidden;
+}
+.wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+}
+main {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    overflow: visible;
+}
+.imgWrapper {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 17%;
+    left: 17%;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    border: 1px dashed #000000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+#select {
+    width: 40px;
+    position: absolute;
+    z-index: 2;
+    top: 7%;
+    left: -30%;
+    visibility: hidden;
+}
+#folder {
+    width: 40px;
+    position: absolute;
+    top: 5%;
+    left: -30%;
+}
+.text {
+    position: absolute;
+    top: 11%;
+    left: -34%; 
+    font-family: Abel;
+    font-weight: bold;
+}
+#upload {
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+}
+.ui-icon {
+    background: none;
+}
