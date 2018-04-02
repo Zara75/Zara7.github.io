@@ -1,0 +1,127 @@
+* {
+    font-family: "Forte Regular";
+}
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.for_animation {
+    width: 860px;
+    
+    margin: 0 auto;
+}
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    zoom: 0.9;
+}
+fieldset {
+    border: none;
+}
+.first {
+   background-image: url("../images/table.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+    
+   border: 30px solid transparent;
+   border-image: url(../images/art_table.png) 30 round;
+    
+   zoom: 0.8;
+}
+.caption {
+    height: 115px;
+    
+    color: #ae171e;
+    font-size: 34px;
+    
+    line-height: 115px;
+}
+.certified {
+    position: absolute;
+    bottom: 55px;
+    right: -100px;
+    
+    color: #e61f1f;
+    
+    display: inline-block;
+    
+    transform: rotate(45deg);
+    animation: circle 4s linear;
+}
+.caption span {
+    display: none;
+}
+@keyframes circle {
+    0% {
+        transform: rotate(180deg) scale(5);
+        opacity: 0.3;
+    }
+    25% {
+        transform: rotate(45deg) scale(4);
+        opacity: 0.5;
+        
+    }
+    50% {
+        transform: rotate(45deg) scale(3);
+        opacity: 0.7;
+    }
+    75% {
+        transform: rotate(45deg) scale(2);
+        opacity: 0.9;
+    }
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
+}
+th {
+    color: #1a32a7;
+}
+td {
+    color: #e61f1f;
+}
+textarea {
+    background: none;
+    border: none;
+}
+select{
+    color: #1a32a7;
+    background:none;
+}
+input {
+    color: #e61f1f;
+    background: none;
+}
+input:focus {
+    outline: none;
+}
+td img:nth-of-type(1){
+    display: none;
+}
+td img:nth-of-type(2){
+    display: none;
+}
+td img:nth-of-type(4){
+    display: none;
+}
+td img:nth-of-type(5){
+    display: none;
+}
+td img:nth-of-type(6){
+    display: none;
+}
+td img:nth-of-type(7){
+    display: none;
+}
+td img:nth-of-type(8){
+    display: none;
+}
+#homephone, #email, #tel, #skype {
+    color: #ffffff;
+    font-weight: bold;
+}

@@ -1,0 +1,992 @@
+* {
+    font-family: "Forte Regular";
+}
+body {
+    background-image: url("../images/blackboard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    zoom: 0.8;
+}
+th {
+    color: #e1e1e1;
+}
+td {
+    color: #ffffff;
+}
+.first {
+/*
+    background-image: url("../images/blackboard1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+*/
+    
+    zoom: 0.8;
+}
+.caption {
+    height: 115px;
+    line-height: 130px;
+    
+    color: #f1ced4;
+    cursor: url('../images/chalk.png'), auto;
+    font-size: 48px;
+    text-align: center;
+}
+.caption span {
+    display: inline-block;
+}
+.cv {
+    display: none;
+}
+.certified {
+    display: none;
+}
+/*
+.caption span:nth-child(1) {
+    animation: jump 0.5s ease-out alternate;
+}
+.caption span:nth-child(2) {
+     animation: jump 0.5s ease-out alternate 0.5s;
+}
+.caption span:nth-child(3) {
+     animation: jump 0.5s ease-out alternate 1s;
+}
+.caption span:nth-child(4) {
+     animation: jump 0.5s ease-out alternate 1.5s;
+}
+.caption span:nth-child(5) {
+     animation: jump 0.5s ease-out alternate 2s;
+}
+.caption span:nth-child(6) {
+     animation: jump 0.5s ease-out alternate 2.5s;
+}
+.caption span:nth-child(7) {
+     animation: jump 0.5s ease-out alternate 3s;
+}
+.caption span:nth-child(8) {
+     animation: jump 0.5s ease-out alternate 3.5s;
+}
+.caption span:nth-child(9) {
+     animation: jump 0.5s ease-out alternate 4s;
+}
+.caption span:nth-child(10) {
+     animation: jump 0.5s ease-out alternate 4.5s;
+}
+.caption span:nth-child(11) {
+     margin-right: 30px;
+     animation: jump 0.5s ease-out alternate 5s;
+}
+.caption span:nth-child(12) {
+     animation: jump 0.5s ease-out alternate 5.5s;
+}
+.caption span:nth-child(13) {
+     animation: jump 0.5s ease-out alternate 6s;
+}
+.caption span:nth-child(14) {
+     animation: jump 0.5s ease-out alternate 6.5s;
+}
+.caption span:nth-child(15) {
+     animation: jump 0.5s ease-out alternate 7s;
+}
+.caption span:nth-child(16) {
+     animation: jump 0.5s ease-out alternate 7.5s;
+}
+@keyframes jump {
+	0% {
+        color: #989898;
+        transform: translateY(0);
+    }
+    75% {
+        color: #cccccc;
+    }
+	100% {
+        color: #ffffff;
+        transform: translateY(-35px);
+    }
+}
+*/
+select{
+    color: #f0ecd3;
+    background: none;
+}
+
+input {
+    color: #e1e1e1;
+    background: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #f0ecd3;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #f0ecd3;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #f0ecd3;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #f0ecd3;
+}
+td img:nth-of-type(1) {
+    display: none;
+}
+td img:nth-of-type(2) {
+    display: none;
+}
+td img:nth-of-type(3) {
+    display: none;
+}
+td img:nth-of-type(5) {
+    display: none;
+}
+td img:nth-of-type(6) {
+    display: none;
+}
+td img:nth-of-type(7) {
+    display: none;
+}
+td img:nth-of-type(8) {
+    display: none;
+}
+#homephone, #email, #tel, #skype {
+    color: #f1ced4;
+    font-weight: bold;
+}
+textarea {
+    color: #f1ced4;
+    
+    background: none;
+    
+    border: none;
+}
+fieldset {
+    border: none;
+}
+legend {
+    color: #f1ced4; 
+}
+svg #path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash 5s linear forwards;
+  animation: dash 5s linear forwards;
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path1 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash1 5s linear forwards;
+  animation: dash1 5s linear forwards;
+  animation-delay:1s;
+}
+@-webkit-keyframes dash1 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash1 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path1 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash1 5s linear forwards;
+  animation: dash1 5s linear forwards;
+  animation-delay:1s;
+}
+@-webkit-keyframes dash1 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash1 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}svg #path2 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash1 5s linear forwards;
+  animation: dash2 5s linear forwards;
+  animation-delay:2s;
+}
+@-webkit-keyframes dash2 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash2 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path3 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash1 5s linear forwards;
+  animation: dash3 5s linear forwards;
+  animation-delay:3s;
+}
+@-webkit-keyframes dash3 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash3 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path4 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash4 5s linear forwards;
+  animation: dash4 5s linear forwards;
+  animation-delay:4s;
+}
+@-webkit-keyframes dash4 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash4 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path5 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash5 5s linear forwards;
+  animation: dash1 5s linear forwards;
+  animation-delay:5s;
+}
+@-webkit-keyframes dash5 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash5 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash 5s linear forwards;
+  animation: dash 5s linear forwards;
+  animation-delay:0;
+ 
+
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path1 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash1 5s linear forwards;
+  animation: dash1 5s linear forwards;
+  animation-delay:0.15s;
+}
+@-webkit-keyframes dash1 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash1 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path2 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash1 5s linear forwards;
+  animation: dash1 5s linear forwards;
+  animation-delay:0.3s;
+}
+@-webkit-keyframes dash1 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash1 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}svg #path3 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash1 5s linear forwards;
+  animation: dash2 5s linear forwards;
+  animation-delay:0.45s;
+}
+@-webkit-keyframes dash2 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash2 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path4 {
+  fill: none;
+  stroke:white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash1 5s linear forwards;
+  animation: dash3 5s linear forwards;
+  animation-delay:0.6s;
+}
+@-webkit-keyframes dash3 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash3 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path5 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash4 5s linear forwards;
+  animation: dash4 5s linear forwards;
+  animation-delay:0.75s;
+}
+@-webkit-keyframes dash4 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash4 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path6 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash5 5s linear forwards;
+  animation: dash1 5s linear forwards;
+  animation-delay:0.9s;
+}
+@-webkit-keyframes dash5 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash5 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path7 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash5 5s linear forwards;
+  animation: dash1 5s linear forwards;
+  animation-delay:1.05s;
+}
+@-webkit-keyframes dash5 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash5 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path8 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash5 5s linear forwards;
+  animation: dash1 5s linear forwards;
+  animation-delay:1.2s;
+}
+@-webkit-keyframes dash5 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash5 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path9 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash5 5s linear forwards;
+  animation: dash1 5s linear forwards;
+  animation-delay:1.35s;
+}
+@-webkit-keyframes dash5 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash5 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path10 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash5 5s linear forwards;
+  animation: dash10 5s linear forwards;
+  animation-delay:1.5s;
+}
+@-webkit-keyframes dash10 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash10 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path11 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash 5s linear forwards;
+  animation: dash11 5s linear forwards;
+  animation-delay:1.65s;
+ 
+
+}
+@-webkit-keyframes dash11 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash11 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+svg #path12 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash 5s linear forwards;
+  animation: dash12 5s linear forwards;
+  animation-delay:1.8s;
+ 
+
+}
+@-webkit-keyframes dash12 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash12 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path13 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash 5s linear forwards;
+  animation: dash13 5s linear forwards;
+  animation-delay:1.95s;
+ 
+
+}
+@-webkit-keyframes dash13 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash13 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path14 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash 5s linear forwards;
+  animation: dash 5s linear forwards;
+  animation-delay:2.1s;
+ 
+
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg #path15 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash 5s linear forwards;
+  animation: dash 5s linear forwards;
+  animation-delay:2.25s;
+ 
+
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}svg #path16 {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash 5s linear forwards;
+  animation: dash 5s linear forwards;
+  animation-delay:2.4s;
+ 
+
+}
+ 
+svg #path17 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay:2.55s;
+}
+svg #path18 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 2.7s;
+}
+svg #path19 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 2.85s;
+}
+svg #path20 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 3s;
+}
+svg #path21 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 3.15s;
+}
+svg #path22 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 3.3s;
+}
+svg #path23 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 3.45s;
+}
+svg #path24 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 3.6s;
+}
+svg #path25 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 3.75s;
+}
+svg #path26 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 3.9s;
+}
+svg #path27 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 4.05s;
+}
+svg #path28 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 4.2s;
+}
+svg #path29 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 4.35s;
+}
+svg #path30 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 4.5s;
+}
+svg #path31 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 4.65s;
+}
+svg #path32 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 4.8s;
+}
+svg #path33 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 4.95s;
+}
+svg #path34 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 5.1s;
+}
+svg #path35 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 5.25s;
+}
+svg #path36 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 5.4s;
+}
+svg #path37 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 5.55s;
+}
+svg #path38 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 5.7s;
+}
+svg #path39 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 5.85s;
+}
+svg #path40 {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+    animation-delay: 6s;
+}

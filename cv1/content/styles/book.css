@@ -1,0 +1,221 @@
+* {
+    font-family: "Dosis Medium";
+}
+body {
+    font-size: 18px;
+    
+    background-image: url(../../images/);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form {
+    height: 750px;
+    width: 1500px;
+    
+    position: relative;
+    
+    margin: 0 auto;
+    zoom: 0.8;
+}
+.first {
+   zoom: 0.75;
+   margin: 0 auto;
+   transform: rotateY(180deg);
+}
+.caption {
+    color: #36354e;
+    font-size: 48px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px #d94bcf, 0 0 1em #696969;
+    line-height: 85px;
+}
+.cv {
+    text-align: center; 
+}
+.certified {
+    display: none;
+}
+.caption span {
+    display: none;
+}
+th {
+    color: #102122;
+}
+tbody:nth-of-type(1) td {
+    color: #a2369a;
+}
+tbody:nth-of-type(2) td {
+    color: #102122;
+    font-weight: 600;
+}
+#avatar {
+    width: 20px;
+    visibility: hidden;
+}
+select {
+    color: #4d025a;
+    font-size: 14px;
+    
+    background: rgba(140, 140, 140, 0.7);
+    
+    border: none;
+}
+textarea {
+    background: rgba(140, 140, 140, 0.7);
+}
+input {
+    color: #a2369a;
+    font-size: 18px;
+    
+    background: rgba(140, 140, 140, 0.7);
+    
+    border: none;
+}
+#homephone, #email, #tel, #skype {
+    color: #4d025a;
+    font-weight: bold;
+}
+td img:nth-of-type(1) {
+    display: none;
+}
+td img:nth-of-type(2) {
+    display: none;
+}
+td img:nth-of-type(3) {
+    display: none;
+}
+td img:nth-of-type(4) {
+    display: none;
+}
+td img:nth-of-type(5) {
+    display: none;
+}
+td img:nth-of-type(7) {
+    display: none;
+}
+.book {
+  height: 750px;
+  width:  1500px;
+    
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+    
+  margin: auto;
+    
+  perspective: 2000px;
+  transform: rotateY(180deg)
+      
+}
+.cover {
+  height: 750px;
+  width: 750px;
+    
+  background-color: #36354e;
+    
+  transform: rotateY(0deg);
+}
+.page {
+  height: 720px;
+  width: 700px;
+    
+  top: 15px;
+  left: 50px;
+    
+  background-color: #e9e6c4;
+  padding-top: 60px;
+
+  transform: rotateY(0deg);
+}
+.cover, .page {
+  position: absolute;
+  transform-origin: 100% 0;
+  border-radius: 5px 0 0 5px;
+  box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2),
+    0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.cover.turn {
+  animation: bookCover 3s forwards;
+}
+.page.turn {
+  animation: bookOpen 3s forwards;
+}
+.page:nth-of-type(1) {
+  animation-delay: 0.05s;
+}
+.page:nth-of-type(2) {
+  animation-delay: 0.33s;
+}
+.page:nth-of-type(3) {
+  animation-delay: 0.66s;
+}
+.page:nth-of-type(4) {
+  animation: bookOpen180deg 3s forwards;
+  animation-delay: 0.99s;
+}
+.page:nth-of-type(5) {
+  overflow: hidden;
+  animation: bookOpen0deg 3s forwards;
+  animation-delay: 1.2s;
+}
+.page:nth-of-type(6) {
+  animation: bookOpen180deg 3s forwards;
+  animation-delay: 1.25s;
+}
+@keyframes bookOpen {
+  30% {
+    z-index: 999;
+  }
+  100% {
+    z-index: 999;
+    transform: rotateY(180deg);
+  }
+}
+@keyframes bookCover {
+  30% {
+    z-index: 999;
+  }
+  100% {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+}
+@keyframes bookOpen120deg {
+  30% {
+    z-index: 999;
+  }
+  100% {
+    z-index: 999;
+    transform: rotateY(120deg);
+  }
+}
+@keyframes bookOpen55deg {
+  30% {
+    z-index: 999;
+  }
+  100% {
+    z-index: 999;
+    transform: rotateY(55deg);
+  }
+}
+@keyframes bookOpen0deg {
+  50% {
+    z-index: 999;
+  }
+  100% {
+    z-index: 999;
+    transform: rotateY(0deg);
+  }
+}
+/*
+@media screen and (min-width: 300px) and (max-width: 1700px) {
+    form {
+      zoom: 0.7;   
+    }
+}
+*/
+
+

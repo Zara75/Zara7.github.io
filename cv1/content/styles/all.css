@@ -1,0 +1,180 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+ html,body {
+	height: 100%;
+	width: 100%;	
+}
+/*
+tr, th, td {
+    border: 1px solid;
+}
+*/
+body {
+    vertical-align: middle;
+    
+    display: table;
+    overflow: scroll;
+    
+    user-select: none;
+}
+body::-webkit-scrollbar {
+    width: 16px;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #a9a9a9;
+    
+    outline: 1px solid #57636f;
+}
+main {
+    vertical-align: middle;
+    
+    display: table-cell;
+    
+    margin: 0 auto;
+    white-space: nowrap;
+}
+form {
+    margin: 0 auto;
+}
+.first {
+   padding: 0 10px 10px 10px;
+   margin: 0 auto;
+}
+.second {
+    width: 100%;
+    position: relative;
+}
+.second tbody:nth-of-type(2){
+    float: right;
+}
+abbr {
+    text-decoration: none;
+}
+.caption {
+    position: relative;
+    
+    font-size: 58px;
+    font-weight: bolder;
+}
+.cv {
+    font-weight: bold;
+    text-align: center; 
+}
+.certified {
+    display: none;
+}
+.letters {
+    display: none;
+}
+th {
+    width: 175px;
+    
+    color: #102122;
+    text-align: right;
+    
+    padding-right: 10px;
+}
+.smaller {
+    width: 130px;
+}
+tbody:nth-of-type(1) {
+    float: left;
+}
+th:not(.points)::after {
+    content: ":";
+}
+q.bracket {
+    quotes: "(" ")";
+}
+.skill {
+    width: 100px;
+    text-align: center;
+}
+textarea, select:not(.level) {
+    font-size: 16px;
+}
+textarea {
+    width: 228px;
+    resize: none;
+}
+.other  {
+    width: 620px;
+}
+.programm {
+    width: 121px;
+}
+select {
+    width: 100%;
+    
+    text-align: center;
+    
+    border: none;
+    margin: 0 auto;
+}
+#achat_themes {
+    width: 200px;
+}
+#avatar {
+    width: 20px;
+    visibility: hidden;
+}
+#SSN {
+    width: 71px;
+    margin: 0 2.5px 0 2.5px;
+}
+.job {
+    width: 100%;
+    font-size: 16px;
+}
+.lang {
+    font-size: 14px;
+    text-align: right;
+    
+    padding-right: 17px;
+}
+fieldset {
+    padding: 0 20px;
+}
+legend {
+    font-weight: bold;
+}
+.for_input input {
+    width: 100%;
+}
+input {
+    font-size: 16px;
+    
+    border: none;
+}
+input:focus {
+    outline: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #3e3d3d;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #3e3d3d;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #3e3d3d;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #3e3d3d;
+}
+#homephone, #email, #tel, #skype {
+    font-weight: bold;
+}
+.level {
+    width: 165px;
+}
+.apple {
+    display: none;
+}
+.remote {
+    display: none;
+}

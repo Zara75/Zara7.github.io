@@ -1,0 +1,573 @@
+<!DOCTYPE xhtml[
+<!ENTITY style "content/styles/">
+<!ENTITY image "content/images/">
+]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="&image;/icon_cv.png"/>
+<link rel="stylesheet" href="&style;/all.css"/>
+<link rel="stylesheet" href="&style;/style.css"  title="chat_theme"/>
+<link rel="author" href="#"/>
+<meta name="author" content="Zara Aghababyan"/>
+<meta charset="UTF-8"/>
+<meta name="description" content="CV"/>
+<title>CV</title>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="script/tv.js"></script>
+<!--
+<script src="script/localSession.js"></script>
+<script src="script/jQuary.js"></script>
+<script src="script/models/user.js"></script>
+-->
+</head>
+<body>
+<select id="achat_themes">
+    <option value="Water">Water</option>
+    <option value="Rotate">Rotate</option>
+    <option value="Stamp">Stamp</option>
+    <option value="Letters">Letters</option>
+    <option value="Down">Down</option>
+    <option value="Shake">Shake</option>
+    <option value="Tbody_down">Tbody_down</option>
+    <option value="TV">TV</option>
+    <option value="Book">Book</option>
+</select>
+<main>
+<form>
+<div class="for_animation book picture">
+<span class="page turn"></span>
+<span class="page turn"></span>
+<span class="page turn"></span>
+<span class="page turn"></span>
+<span class="page turn">
+<div class="hook"></div> 
+<div class="an noiseContain frame">
+<div class="noise" id="demo"></div>
+<table class="first inside">
+<tr>
+    <td class="caption">
+    <div class="cv">CURRICULUM VITAE</div>
+    <span class="letters">
+    <svg x="0px" y="0px" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path id="path1" d="M 17 2 c-27 5,-12 29,8 24 " />
+    </svg>
+    <svg x="0px" y="0px" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path id="path2" d="M 2 2 c1 29,22 29,19 0  " />
+    </svg>
+    <svg x="0px" y="0px" width="20px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path id="path3" d="M 2 27 l1 -27,13 -29" />
+        <path id="path3" d="M 2 2 q29 10,-1 18 " />
+        <path id="path3" d="M 3 16 q2 3,11 10 " />
+    </svg>
+    <svg x="0px" y="0px" width="20px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path id="path4" d="M 2 27 l1 -27,13 -29" />
+        <path id="path4" d="M 2 2 q29 10,-1 18 " />
+        <path id="path4" d="M 3 16 q2 3,11 10 " />
+    </svg>
+    <svg x="0px" y="0px" width="20px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        
+        <path id="path5" d="M 2 2 q4 3,13 0 " />
+        <path id="path5" d="M 7 2 l3 2,-2 21" />
+        <path id="path5" d="M 2 26 q4 -3,13 0 " />
+    </svg>
+    <svg x="0px" y="0px" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path id="path6" d="M 17 2 c-27 5,-12 29,8 24 " />
+    </svg>
+     <svg x="0px" y="0px" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path id="path7" d="M 2 2 c1 29,22 29,19 0  " />
+    </svg>
+     <svg x="0px" y="0px" width="20px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path id="path8" d="M 2 2 l3 2,-2 21" />
+        <path id="path8" d="M 2 26 q4 -3,13 0 " />
+    </svg>
+     <svg x="0px" y="0px" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path id="path9" d="M 2 2 c1 29,22 29,19 0  " />
+    </svg>
+     <svg x="0px" y="0px" width="25px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+        <path id="path10" d="M 2 2 q4 8,11 13 " />
+        <path id="path10" d="M 0 2 l3 2,-1 21" />
+        <path id="path10" d="M 13 13 q-4 8,8 -9 " />
+        <path id="path10" d="M 21 2 l0 2,-1 21" />
+    </svg>
+    <span></span>
+     <svg x="0px" y="0px" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path id="path11" d="M 2 2 c9 29,1 29,19 0  " />
+    </svg>
+     <svg x="0px" y="0px" width="20px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        
+        <path id="path12" d="M 2 2 q4 3,13 0 " />
+        <path id="path12" d="M 7 2 l3 2,-2 21" />
+        <path id="path12" d="M 2 26 q4 -3,13 0 " />
+    </svg>
+    <svg x="0px" y="0px" width="20px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+        <path id="path13" d="M 2 2 q4 3,16 0 " />
+        <path id="path13" d="M 7 4 l3 2,-2 21" />
+    </svg>
+    <svg x="0px" y="0px" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path id="path14" d="M 2 27 c1 -29,13 -29 ,17 0" />
+        <path id="path14" d="M 7 18 q 12 -2 ,2 0" />
+    </svg>
+    <svg x="0px" y="0px" width="20px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+        <path id="path15" d="M 2 2 q4 3,13 0 " />
+        <path id="path15" d="M 2 2 l3 2,-2 21" />
+        <path id="path15" d="M 2 26 q4 -3,13 0 " />
+        <path id="path15" d="M 2 16 q4 -3,13 -3 " />
+    </svg>
+    </span>
+    <div class="certified">CERTIFIED</div>
+    </td>
+</tr>
+<tr>
+    <td>
+    <fieldset>
+    <legend>Personal Info</legend>
+    <table class="second for_input">
+    <tbody>
+    <tr>
+        <th><label for="FirstName" title="First Name">First Name</label></th>
+        <td>
+            <input type="text" id="FirstName" name="FirstName" placeholder="First Name" title="First Name" value="Zara"/>
+        </td>
+    </tr>
+    <tr>
+        <th><label for="MidInitial" title="Middle Initial">MI</label></th>
+        <td>
+            <input type="text" id="MidInitial" name="MidInitial" placeholder="Middel Initial" title="Middel Initial" value="none"/>
+        </td>
+    </tr>
+    <tr>
+        <th><label title="Last Name" for="LastName">Last Name</label></th>
+        <td>
+            <input type="text" id="LastName" name="LastName" placeholder="Last Name" title="Last Name" value="Aghababyan"/>
+        </td>
+    </tr>
+    <tr>
+        <th><label for="JobTitle" title="Job Title">Job Title</label></th>
+        <td>
+            <select id="JobTitle" name="JobTitle" class="job">
+            <optgroup label="Education Level">
+            <option value="r1">Apprentice</option>
+            <option value="r2">Newbie</option>
+            <option value="r3">Novice</option>
+            <option value="r4">Tyro</option>
+            </optgroup>
+            <optgroup label="Job Position">
+            <option value="r6">Intern</option>
+            <option value="r7">Junior Developer</option>
+            <option value="r8">Middle Developer</option>
+            <option value="r9">Senior Developer</option>
+            <option value="r10">Lead Developer</option>
+            </optgroup>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th><label for="work" title="Working Experience">Working Experience</label></th>
+        <td>
+             <textarea id="work" rows="1">none</textarea>
+        </td>
+    </tr>
+    <tr>
+        <th><label for="date" title="Birth Date">Birth Date</label></th>
+        <td> 
+            <input type="date" id="date" name="date" class="job" title="Birth Date dd/mm/yy" value="1992-08-31"/>
+        </td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <th class="points"></th>
+        <td><label for="avatar" title="avatar"></label>
+            <img alt="avatar" src="Content/Images/girl_icon.png"/>
+            <img alt="avatar" src="Content/Images/girl.png"/>
+            <img alt="avatar" src="Content/Images/art_girl.png"/>
+            <img alt="avatar" src="Content/Images/businesswoman-180.png"/>
+            <img alt="avatar" src="Content/Images/down_girl_icon.png"/>
+            <img alt="avatar" src="Content/Images/purple_girsl.png"/>
+            <img alt="avatar" src="Content/Images/businesswoman-130.png"/>
+            <input id="avatar" type="file" name="avatar"/>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+    </fieldset>
+    </td>
+</tr>
+<tr>
+    <td>
+    <details>
+    <summary></summary>
+    <fieldset>
+    <legend>Location</legend>
+    <table class="second for_input">
+    <tbody>
+    <tr>
+        <th for="country" title="Country">Country</th>
+        <td>
+            <select id="country" name="country" class="counrty">
+            <optgroup label="Country">
+            <option value="1">Armenia</option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            </optgroup>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th title="State">State</th>
+        <td>
+            <select name="state" class="state">
+            <optgroup label="State">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            </optgroup>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th title="City">City</th>
+        <td>
+            <select name="city" class="city">
+            <optgroup label="City">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            </optgroup>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th><label title="Address">Address</label></th>
+        <td>
+            <input type="text" id="address" name="address" placeholder="Address" value="Davtashen"/>
+        </td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <th><abbr title="Social Security Number">SSN</abbr></th>
+        <td>
+            <input type="number" id="SSN1" name="SSN1"/>
+            <input type="number" id="SSN2" name="SSN2"/>
+            <input type="number" id="SSN3" name="SSN3"/>
+        </td>
+    </tr>
+    <tr>
+        <th><label for="HomePhone" title="Home Phone">Home Phone</label></th>
+        <td>
+        <a href="tel:+37410361944">
+            <input type="tel" id="HomePhone" name="homephone" placeholder="Home Phone" title="Home Phone" value="(010) 36-19-44"/>
+        </a>
+        </td>
+    </tr>
+    <tr>
+        <th><label title="Mobile Phone" for="tel">Mobile Phone</label></th>
+        <td>
+            <a href="tel:+37498555279">
+                <input type="tel" id="tel" name="tel" placeholder="Mobile Phone" title="Mobile Phone" value="(098) 55-52-79"/>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <th><label title="Skype ID" for="skype">Skype</label></th>
+        <td>
+            <a href="skype:profile_name?zara_aghababyan">
+                <input type="text" id="skype" name="skype" placeholder="Skype" title="Skype ID" value="zara.aghababyan"/>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <th><label title="Electronic Mail Address" for="email">E-Mail</label></th>
+        <td>
+            <a href="mailto:zara.aghababyan@gmail.com? cc=other@domain.com&amp;bcc=otheremail@gmail.com&amp;Subject=test">
+                <input type="email" id="email" name="email" placeholder="Email Address" title="Email Address" value="zara.aghababyab@gamil.com"/>
+            </a>
+        </td>
+    </tr>
+    <tr>
+    <th><label title="Web Site" for="WebSite">Web Site</label></th>
+        <td>
+            <a target="_blank" href="#">
+                <input type="website" id="WebSite" name="website" placeholder="Web Site" title="Web Site" value="none"/>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <th><label title="Facebook" for="facebook">Facebook</label></th>
+        <td>
+            <a target="_blank" href="https://www.facebook.com/zara.aghababyan">
+                <input type="website" id="facebook" name="facebook" placeholder="Facebook" title="Facebook" value="Zara Aghababyan"/>
+            </a>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+    </fieldset>
+    </details>
+    </td>
+</tr>
+<tr>
+    <td>
+    <fieldset>
+    <legend>Programming Prowess</legend>
+    <table class="second">
+    <tbody>
+    <tr>
+        <th class="skill points"><label title="Markup Language Prowess"><abbr title="Markup Language">ML</abbr>Prowess</label></th>
+        <th class="skill points" title="Scripts">Script</th>
+        <th class="skill points" title="Server">Server</th>
+        <th class="skill points" title="Script Library">Script Library</th>
+        <th class="skill points" title="Models">Models</th>
+        <th class="skill points"><abbr title="DataBase">DB</abbr></th>
+        <th class="skill points" title="Technologies">Technologies</th>
+    </tr>
+    <tr>
+        <td>
+            <select name="MLP" class="programm" multiple="multiple">
+            <option value="XML">XML</option>
+            <option value="HTA">HTA</option>
+            <option value="HTML">HTML</option>
+            <option value="XHTML">XHTML</option>
+            <option value="CSS">CSS</option>
+            <option value="SVG">SVG</option>
+            <option value="XUL">XUL</option>
+            <option value="XPath">XPath</option>
+            <option value="XLink">XLink</option>
+            <option value="DTD">DTD</option>
+            <option value="XAML">XAML</option>
+            <option value="HTMLS">HTMLS</option>
+            <option value="XSL/XSLT">XSL/XSLT</option>
+            </select>
+    </td>
+        <td>
+            <select name="Script" class="programm" multiple="multiple">
+            <option value="JS">JS</option>
+            <option value="C">C</option>
+            <option value="AJAX">AJAX</option>
+            <option value="ECMA Script">ECMA Script</option>
+            <option value="JS OOP">JS OOP</option>
+            <option value="J Script">J Script</option>
+            <option value="VB Script">VB Script</option>
+            <option value="Action Script">Action Script</option>
+            </select>
+        </td>
+        <td>
+            <select name="Server" class="programm" multiple="multiple">
+            <option value="C#">C#</option>
+            <option value="J#">J#</option>
+            <option value="F#">F#</option>
+            <option value="Java">Java</option>
+            <option value="C/C+">C/C+</option>
+            <option value="Fortran">Fortran</option>
+            <option value="Objectiv C">Objectiv C</option>
+            <option value="Swift">Swift</option>
+            <option value="VB">VB</option>
+            <option value="Perl">Perl</option>
+            <option value="Python">Python</option>
+            <option value="PHP">PHP</option>
+            <option value="MSIL">MSIL</option>
+            </select>
+        </td>
+        <td>
+            <select name="JavaScript Library" class="programm" multiple="multiple">
+            <option value="JQuery">JQuery</option>
+            <option value="Node.js">Node.js</option>
+            <option value="AngularJS">AngularJS</option>
+            <option value="ReactJS">ReactJS</option>
+            <option value="MooTools">MooTools</option>
+            <option value="Prototype">Prototype</option>
+            <option value="UI">UI</option>
+            <option value="EXT">EXT</option>
+            </select>
+        </td>
+        <td>
+            <input type="radio" id="DOM" name="model" checked="checked" value="DOM"/> 
+            <label for="DOM">DOM</label><br/>
+            <input type="radio" id="BOM" name="model" value="BOM"/>
+            <label for="BOM">BOM</label><br/>
+            <input type="radio" id="CSSOM" name="model" value="CSSOM"/>
+            <label for="CSSOM">CSSOM</label><br/>
+        </td>
+        <td>
+            <input type="checkbox" id="MySql" name="DB" value="MySQL"/>
+            <label for="MySql"> MySQL</label><br/>
+            <input type="checkbox" id="Mic" name="DB" checked="checked" value="Microsoft"/>
+            <label for="Mic">Microsoft</label><br/>
+            <input type="checkbox" id="SQL" name="DB" value="SQL"/>
+            <label for="SQL">SQL</label><br/>
+            <input type="checkbox" id="Oracle" name="DB" checked="checked" value="Oracle"/>
+            <label for="Oracle">Oracle</label><br/>
+            <input type="checkbox" id="DB" name="DB" value="DB"/>
+            <label for="DB">DB</label><br/>
+        </td>
+        <td>
+            <input type="radio" id="AdoNet" name="tex" checked="checked" value="ADO.NET"/>
+            <label for="AdoNet">ADO.NET</label><br/>
+            <input type="radio" id="MVC" name="tex" value="MS MVC"/>
+            <label for="MVC">MS MVC</label><br/>
+            <input type="radio" id="Entity" name="tex" value="Entity Framework"/>
+            <label for="Entity">Entity Framework</label><br/>
+            <input type="radio" id="AspNet" name="tex" value="ASP.NET"/>
+            <label for="AspNet">ASP.NET</label><br/>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+    </fieldset>
+    </td>
+</tr>
+<tr>
+    <td>
+    <fieldset>
+    <legend>Languages</legend>
+    <table class="second">
+    <tbody class="fordown">
+    <tr>
+        <th class="points smaller"></th>
+        <td>Reading</td>
+        <td>Writing</td>
+        <td>Comunication</td>
+        <td>Understanding</td>
+    </tr>
+    <tr>
+        <td class="lang"><label>Armenian</label></td>
+        <td>
+            <select class="level">
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Satisfactory</option>
+            </select> 
+        </td>
+        <td>
+            <select class="level">
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Satisfactory</option>
+            </select> 
+        </td>
+        <td>
+            <select class="level">
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Satisfactory</option>
+            </select> 
+        </td>
+        <td>
+            <select class="level">
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Satisfactory</option>
+            </select> 
+        </td>
+    </tr>
+    <tr>
+        <td class="lang"><label>Russian</label></td>
+        <td>
+            <select class="level">
+            <option>Excellent</option>
+            <option selected="selected">Good</option>
+            <option>Satisfactory</option>
+            </select> 
+        </td>
+        <td>
+            <select class="level">
+            <option>Excellent</option>
+            <option selected="selected">Good</option>
+            <option>Satisfactory</option>
+            </select> 
+        </td>
+        <td>
+            <select class="level">
+            <option>Excellent</option>
+            <option selected="selected">Good</option>
+            <option>Satisfactory</option>
+            </select> 
+        </td>
+        <td>
+            <select class="level">
+            <option>Excellent</option>
+            <option selected="selected">Good</option>
+            <option>Satisfactory</option>
+            </select> 
+        </td>
+    </tr>
+    <tr>
+        <td class="lang"><label>English</label></td>
+        <td>
+            <select class="level">
+            <option>Excellent</option>
+            <option>Good</option>
+            <option selected="selected">Satisfactory</option>
+            </select> 
+        </td>
+        <td>
+            <select class="level">
+            <option>Excellent</option>
+            <option>Good</option>
+            <option selected="selected">Satisfactory</option>
+            </select> 
+        </td>
+        <td>
+            <select class="level">
+            <option>Excellent</option>
+            <option>Good</option>
+            <option selected="selected">Satisfactory</option>
+            </select> 
+        </td>
+        <td>
+            <select class="level">
+            <option>Excellent</option>
+            <option>Good</option>
+            <option selected="selected">Satisfactory</option>
+            </select> 
+        </td>
+    </tr>
+    </tbody>
+    </table>
+    </fieldset>
+    </td>
+</tr>
+<tr>
+    <fieldset>
+       <legend>Other</legend>
+        <table>
+            <tbody>
+                <tr>
+                    <th><label title="Hobbies">Hobbies</label></th>
+                    <td>
+                    <textarea class="other" rows="2">Latin dances, music, reading</textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</tr>
+</table>
+</div>
+</span>
+<span class="page turn"></span>
+<span class="cover"></span>
+<span class="page"></span>
+<span class="cover turn"></span>
+</div>
+</form>
+<div class="apple">
+<img alt="apple" src="&image;/apple1.png"/>
+<img alt="shadow" src="&image;/shadow.png"/>
+</div>
+<div class="remote">
+    <img id="remote_controller" onclick="myFunction()" alt="pult" src="Content/Images/pult.png"/>
+</div>
+</main>
+</body>
+</html>

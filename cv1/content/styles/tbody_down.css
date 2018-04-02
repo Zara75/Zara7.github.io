@@ -1,0 +1,111 @@
+* {
+    font-family: "Dosis Medium";
+}
+body {
+    font-size: 18px;
+    
+    background-image: url(../images/background7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    zoom: 0.75;
+}
+table {
+   margin: 0 auto;
+}
+tbody:nth-of-type(1) td{
+    color: #517940;
+}
+.caption {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 4px 4px 4px #174605, 0 0 1em #694b74;
+    
+    line-height: 85px;
+}
+.certified {
+    display: none;
+}
+.caption span {
+    display: none;
+}
+th {
+    color: #623760;
+}
+.fordown {
+    transition: all 0.5s;
+}
+.fordown:hover {
+    transform:translate(20px,10px);
+}
+select {
+    color: #997cd0;
+    
+    background: none;
+    
+    border: none;
+}
+input {
+    color: #174605;
+    
+    background: none;
+    
+    border: none;
+}
+input:focus {
+    outline: none;
+}
+option {
+    color: #174605;
+    font-size: 16px;
+}
+#homephone, #email, #tel, #skype {
+    color: #997cd0;
+    font-weight: bold;
+}
+td img:nth-of-type(1){
+    display: none;
+}
+td img:nth-of-type(2){
+    display: none;
+}
+td img:nth-of-type(3){
+    display: none;
+}
+td img:nth-of-type(4){
+    display: none;
+}
+td img:nth-of-type(5){
+    display: none;
+}
+td img:nth-of-type(7){
+    display: none;
+}
+td img:nth-of-type(9){
+    display: none;
+}
+textarea {
+    color: #997cd0;
+    background: none;
+}
+legend {
+    color: #997cd0; 
+}
+/*
+@media screen and (min-width: 300px) and (max-width: 1700px) {
+    main {
+      transform: scale(0.9);   
+    }
+}
+*/
+

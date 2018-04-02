@@ -1,0 +1,126 @@
+* {
+    font-family: "Forte Regular";
+}
+body {
+    background-image: url("../images/new1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    zoom: 0.7;
+}
+.first {
+   background-image: url("../images/table_img.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+    
+   border-style: solid;
+   border-width: 43px 0px 0px;
+   -moz-border-image: url(caption1.png) 43 0 0 round;
+   -webkit-border-image: url(caption1.png) 43 0 0 round;
+   -o-border-image: url(caption1.png) 43 0 0 round;
+   border-image: url(../images/caption1.png) 43 0 0 fill round;
+    
+   animation: change 4s linear;
+}
+@keyframes change{
+    0% {
+        transform: scale(0.6);
+    }
+    25% {
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.apple {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    
+    display: inline-block;
+    
+    transition: right 1.5s ease-in-out;
+}
+.apple:hover {
+    right: 30%;
+}
+.apple img:nth-child(1) {
+    transition: transform 1.5s ease-in-out;
+}
+.apple img:nth-child(2) {
+    top: 128px;
+    right: -106px;
+    
+    transition: transform 1.5s ease-in-out;
+}
+.apple img {
+    position: absolute;
+}
+.apple img:nth-child(1):hover {
+    transform: rotate(-360deg);
+}
+.caption {
+    height: 80px;
+    
+    color: #e61f1f;
+    font-size: 34px;
+    
+    line-height: 80px;
+}
+th {
+    color: #e61f1f;
+}
+textarea {
+    color: #1a32a7;
+    
+    background: rgba(101, 92, 92, 0.15);
+    
+    border: none;
+}
+select{
+    color: #1a32a7;
+    background: rgba(101, 92, 92, 0.15);
+}
+input {
+    color: #1a32a7;
+    background: rgba(101, 92, 92, 0.15);
+}
+td img:nth-of-type(1){
+    display: none;
+}
+#homephone, #email, #tel, #skype {
+    color: #7e7e7e;
+}
+td img:nth-of-type(1){
+    display: none;
+}
+td img:nth-of-type(3){
+    display: none;
+}
+td img:nth-of-type(4){
+    display: none;
+}
+td img:nth-of-type(5){
+    display: none;
+}
+td img:nth-of-type(6){
+    display: none;
+}
+td img:nth-of-type(7){
+    display: none;
+}
+td img:nth-of-type(8){
+    display: none;
+}
