@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+<head>
+<link rel="shortcut icon" href="images/favicon-194x194.png"/>
+<link rel="stylesheet" href="styles/user.css"/>
+<title>User form</title>
+<script src="js/userModel.js"></script>
+<script src="js/userGridScheme.js"></script>
+<script src="js/gridView.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/array.js"></script>
+<script src="js/sysUser.form.js"></script>
+</head>
+<body>
+    <script>
+    // User Model Collection
+    User.insertAll([
+        new User({id: 0, firstName: 'Zara', lastName: 'Aghababyan', age: 25}),
+        new User({id: 1, firstName: 'Amalya', lastName: 'Khurshudyan', age: 22}),
+        new User({id: 2, firstName: 'Rosie', lastName: 'Manukyan', age: 19}),
+        new User({id: 3, firstName: 'Nikita', lastName: 'Melik-Haykazyan', age: 100})
+    ]);
+    User.selectAll();
+        
+    var $form = new SysUserForm({parent: document.body, data: source});
+        
+    var main = document.createElement('main');
+        document.body.appendChild(main);
+        
+    let $cardContainer = document.createElement('div');
+                $cardContainer.classList.add('cardContainer');
+            for(let i = 0; i < 4; i++){
+                var $layerDiv = document.createElement('div');
+                    $layerDiv.classList.add('card');
+                    $cardContainer.appendChild($layerDiv);
+            }
+        main.appendChild($cardContainer);
+
+    var $popup = new Popup({
+        parent: main,
+        $contentForm: $form           
+    }),
+        $grid = new GridView({
+        parent: main,
+        model: User,
+        scheme: userGridScheme,
+        $popup: $popup
+    });
+    </script>
+</body>
+</html>
