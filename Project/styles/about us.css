@@ -1,0 +1,23 @@
+.sidebar {
+    height: 100vh;
+    position: static;
+}
+.main {
+    background: url(../images/main_background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about_background {
+    background: none;
+}
+@media screen and (max-width: 992px) {
+    .sidebar {
+        height: 10%;
+    }
+    .about_background {
+        height: 10%;
+    }
+    .about_background span {
+        margin-top: 15vh;
+}

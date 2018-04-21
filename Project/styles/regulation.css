@@ -1,0 +1,48 @@
+.regulation_background {
+    height: 47vh;
+    background: url(../images/regualtion_background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.regulation_background span {
+    height: 230px;
+    width: 512px;
+    display: inline-block;
+    margin-top: 18vh;
+}
+.lows {
+    padding: 5% 0 20% 0;
+}
+.lows h2 {
+    font-family: GOTHICB;
+    font-size: 250%;
+    color: #469fcc;
+}
+.lows hr {
+    width: 70%;
+    border: 1.5px solid #001f2f;
+}
+.lows p {
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1;
+}
+.lows ul li {
+    height: 100px;
+    list-style: none;
+    background-image: url(../images/blue_pdf.png);
+    background-size: 50px 55px;
+    background-repeat: no-repeat;
+    line-height: 60px;
+    padding-left: 80px;
+}
+.lows ul li a {
+    font-size: 180%;
+    color: #001f2f;
+}
+.dimension_pattern {
+    background-image: url('../images/dimension_pattern.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
