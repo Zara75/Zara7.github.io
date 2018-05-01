@@ -1,7 +1,9 @@
+.footer {
+    margin: 0;
+}
 .contact_us {
-    height: 100vh;
     padding: 5% 0;
-    box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.4);
     z-index: 1;
 }
 .contact_us h2 {
@@ -105,11 +107,24 @@ figure img {
     .info {
         margin-top: 0;
     }
-    .map {
-        height: 30vh;
-    }
     .contact_us {
         height: 10%;
         box-shadow: none;
+    }
+    .talkbubble {
+        width: 155px;
+        height: 200px;
+    }
+    .talkbubble:before {
+        border-left: 13px solid transparent;
+        border-right: 13px solid transparent;
+        border-top: 10px solid #001f2f;
+    }
+    .address {
+        font-size: 65%;
+    }
+    .get_directions {
+        height: 30px;
+        font-size: 85%;
     }
 }

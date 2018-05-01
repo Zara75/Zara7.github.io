@@ -2,22 +2,27 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles/bootstrap.min.css"/>
     <link rel="stylesheet" href="styles/index.css"/>
     <link rel="stylesheet" href="styles/account%20opening.css"/>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Account Openning</title>
 </head>
 <body>
   <div class="container-fluid">
         <div class="row">
         <sidebar class="col-xs-12 col-md-3 sidebar">
-               <header class="col-xs-offset-1 col-xs-10 col-xs-offset-1 col-md-12">
+               <header class="col-xs-12">
                   <div class="lang_bar">
                         <button>ENG</button>
                         <button>ՀԱՅ</button> 
                   </div>
-                  <div><a href="index.html"><img  class="img-responsive logo" src="images/logo1.png" alt="logo"/></a></div>
+                  <div class="logo_wrapper">
+                      <a href="index.html"></a>
+                  </div>
                    <navbar class="navbar navbar-default">
                        <div class="navbar-header">
                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
@@ -38,7 +43,7 @@
                        </div>
                    </navbar>
                </header>
-               <footer class="col-xs-offset-1 col-xs-10 col-xs-offset-1 col-md-12">
+               <footer class="hidden-xs col-sm-12 footer">
                    <div class="row1">
                     <img class="img-responsive" src="images/naghashyan.png" alt="naghashyan"/>
                    </div>
@@ -55,7 +60,7 @@
         <main class="col-xs-12 col-md-9 main">
              <div class="row">
                <div class="col-xs-12 individuals">
-                       <div class="col-xs-offset-1 col-xs-10 col-xs-offset-1">
+                       <div class="col-xs-12 col-md-offset-1 col-md-10 col-md-offset-1">
                             <h4>OPENING ACCOUNT FOR</h4>
                             <h2>INDIVIDUALS</h2>
                             <hr/>
@@ -65,13 +70,13 @@
                                 <li> Application for opening an account in compliance with stated form</li>
                                 <li>Other documents and information indicated by rules of DIMENSION OJSC</li>
                             </ul>
-                            <span>Company document 1</span>
+                            <div class="icon0"><span>Company document 1</span></div>
                        </div>
                </div>
             </div>
             <div class="row">
                <div class="col-xs-12 legal_entitles">
-                       <div class="col-md-offset-1 col-md-10 col-md-offset-1">
+                       <div class="col-xs-12 col-md-offset-1 col-md-10 col-md-offset-1">
                             <h4>OPENING ACCOUNT FOR</h4>
                             <h2 class="white_header">LEGAL ENTITLES</h2>
                             <hr/>
@@ -85,10 +90,25 @@
                                 <li>Application for opening an account in compliance with stated form,</li>
                                 <li>Other documents and information indicated by rules of DIMENSION OJSC</li>
                             </ul>
-                            <span>Company document 1</span>
+                            <div class="icon1"><span>Company document 1</span></div>
                        </div>
                </div>
             </div>
+            <div class="row">
+               <footer class="col-xs-12 footer mobile">
+                   <div class="row1">
+                    <img class="img-responsive" src="images/naghashyan.png" alt="naghashyan"/>
+                   </div>
+                   <div class="row2">
+                       <img class="img-responsive" src="images/hashtarar.png" alt="hashtarar"/>
+                       <img class="img-responsive" src="images/abbc1.png" alt="abbc1"/>
+                   </div>
+                   <div style="clear: left"></div>
+                   <div class="row3">
+                    <p>Dimension is not responsible for the accuracy and reliability of the information and/or advertisements presented on the third party websites linked from this website and assumes no responsibility for the consequences arising from the use of the said information.</p>
+                   </div>
+                </footer>
+        </div>
         </main>
       </div>
     </div>

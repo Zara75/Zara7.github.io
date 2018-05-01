@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: GOTHIC;
+    src: url(../Fonts/GOTHIC.ttf);
+}
+@font-face {
+    font-family: GOTHICB;
+    src: url(../Fonts/GOTHICB.ttf);
+}
+@font-face {
+    font-family: Arial-AMU-Regular;
+    src: url(../Fonts/Arial-AMU-Regular.ttf);
+}
+a, a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+textarea:focus, input:focus, button:focus {
+    outline: none;
+}
+.lang_bar {
+    height: 30px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #00121b;
+    margin: 7% 0 10% 0%;
+}
+.lang_bar button {
+    height: 80%;
+    width: 46%;
+    border: none;
+    font-weight: bold;
+}
+.lang_bar button:nth-of-type(1) {
+    color: #ffffff;
+    border-radius: 2px;
+    background: #003855;
+}
+.lang_bar button:nth-of-type(2) {
+    color: #2d6480;
+    background: none;
+    font-family: Arial-AMU-Regular;
+    font-weight: bold;
+}
+.logo {
+    width: 40%;
+}
+header {
+    margin-left: 17%;
+    margin-bottom: 10%;
+}
+header ul {
+    list-style: none;
+    margin-top: 10%;
+}
+header ul li {
+    padding-bottom: 2%;
+}
+header a:not(.active) {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+.active {
+    text-decoration: none;
+    color: #469fcc;
+    font-weight: bold;
+}
+header a:hover {
+    text-decoration: none;
+    color: #469fcc;
+    font-weight: bold;
+    transition: color 0.25s linear;
+}
+header ul li a:hover::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 10px solid #469fcc;
+	border-bottom: 5px solid transparent;
+    transition: all 0.25s linear;
+    padding-right: 10px;
+    margin-left: -20px;
+}
+.navbar-default {
+    background: none;
+    border: none;
+    z-index: 2;
+}
+.navbar-collapse {
+    padding: 0;
+}
+footer img {
+    width: 50%;
+}
+.row2 {
+    margin: 4% 4% 4% 0;
+}
+.row2 img {
+    float: left;
+}
+.row2 img:nth-of-type(1) {
+    width: 35%;
+    margin-right: 10%;
+}
+.row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+.row3 p {
+    font-size: 11px;
+    font-weight: bold;
+    color: #2d6480;
+    line-height: 1;
+}
+.main {
+    float: right;
+    font-family: GOTHIC;
+}
+.about_background {
+    height: 100vh;
+    background: url(../images/main_background.png);
+    background-position: top;
+}
+.about_background span {
+    height: 230px;
+    width: 512px;
+    display: inline-block;
+    margin-top: 50vh;
+}
+.white_header  {
+    font-family: GOTHICB;
+    font-size: 300%;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+}
+.theam_background h4 {
+    font-size: 250%;
+    color: rgb(255, 255, 255);
+    line-height: 0;
+}
+.about_background h2 {
+    text-align: center;
+}
+.paragraph_img {
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    line-height: 1;
+} 
+.mission {
+    padding: 0 0 10% 0;
+}
+.blue_header {
+    font-family: GOTHICB;
+    color: #2d6480;
+    font-size: 250%;
+    margin-top: 10%;
+}
+.mission p {
+    font-size: 100%;
+    text-align: justify;
+    line-height: 1;
+    font-weight: 500;
+}
+.theam_background {
+    height: 65vh;
+    background: url(../images/team_background.png);
+    background-position: center;
+}
+.theam_background span {
+    height: 230px;
+    width: 512px;
+    display: inline-block;
+    margin-top: 25vh;
+}
+.organization_background {
+    height: 60vh;
+    background: url(../images/oraganization_background.png);
+    background-position: center;
+}
+.organization_background span {
+    height: 230px;
+    width: 512px;
+    display: inline-block;
+    margin-top: 15vh;
+}
+.team_members img {
+    width: 40%;
+    height: 40%;
+}
+.team_row {
+    text-align: center;
+}
+.team_row button {
+    background: none;
+}
+.team_row .btn:focus {
+    outline: none;
+    border: none;
+}
+.team_row .btn:active {
+    box-shadow: none;
+}
+.team_row p:not(.info) {
+    width: 100%;
+    text-align: center;
+    color: #2d6480;
+    line-height: 0.8;
+}
+.modal-body {
+    text-align: center;
+}
+.info {
+    font-size: 100%;
+    text-align: justify;
+}
+button p:nth-of-type(1) {
+    font-size: 140%;
+    font-weight: bold;
+    margin-top: 5%;
+}
+button p:nth-of-type(2) {
+    font-size: 120%;
+}
+.structure {
+    background-image: url("../images/structure.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 30% 0;
+}
+.grey_line {
+    height: 5px;
+    background: #aaaaaa;
+}
+.shareholders {
+    height: 55%;
+    padding: 2% 0 5% 0;
+}
+.shareholders p {
+    width: 50%;
+    font-size: 100%;
+    font-weight: 500;
+}
+.shareholders div:nth-of-type(2n) {
+    height: 47px;
+    background: #e5e5e5;
+}
+.shareholders div:nth-of-type(3), .shareholders div:nth-of-type(5) {
+    height: 47px;
+    background: #f5f5f5;
+}
+.statutory {
+    height: 75%;
+    background: #2d6480;
+    color: #ffffff;
+    padding: 7% 0;
+}
+.statutory h2 {
+    font-family: GOTHICB;
+    font-size: 300%;
+}
+.statutory p {
+    width: 40%;
+    font-size: 100%;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.statutory a {
+    font-size: 180%;
+    color: #ffffff;
+}
+.statutory ul li {
+    height: 100px;
+    list-style: none;
+    background-image: url(../images/pdf_icon.png);
+    background-repeat: no-repeat;
+    line-height: 60px;
+    padding-left: 80px;
+}
+.white_line {
+    height: 5px;
+    background: #ffffff;
+    margin-top: 5%;
+}
+.parallax {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 991px) {
+    .sidebar {
+        position: static;
+    }
+    .statutory ul li {
+        height: 75px;
+        line-height: 65px;
+        padding-left: 65px;
+        background-size: 9%;
+    }
+    footer img {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .lang_bar {
+        float: left;
+    }
+    .logo_wrapper {
+        margin-left: 3%;
+        margin-top: 8%;
+    }
+    .navbar-header {
+        width: 6%;
+        display: inline-flex;
+    }
+    .row3 p {
+        font-size: 55%;
+   }
+    .about_background {
+        height: 55vh;
+    }
+    .about_background span {
+        width: 222px;
+        margin-top: 10vh;
+    }
+    .white_header {
+        font-size: 150%;
+    }
+    .blue_header {
+        font-size: 150%;
+    }
+    .paragraph_img {
+        font-size: 60%;
+    }
+    .mission p {
+        font-size: 75%;
+    }
+    .theam_background {
+        height: 45vh;
+    }
+    .theam_background span {
+        width: 222px;
+        margin-top: 5vh;
+    }
+    .theam_background h4 {
+        font-size: 150%;
+    }
+     .theam_background h2 {
+        font-size: 100%;
+    }
+    .organization_background {
+        height: 45vh;
+    }
+    .organization_background span {
+        width: 222px;
+        margin-top: 5vh;
+    }
+    .statutory h2 {
+        font-size: 150%;
+    }
+    .statutory p {
+        width: 70%;
+        font-size: 75%;
+    }
+    .statutory ul li {
+        height: 75px;
+        line-height: 48px;
+        padding-left: 60px;
+        background-size: 18%;
+    }
+    .statutory a {
+        font-size: 100%;
+    }
+
+    .shareholders p {
+        font-size: 75%;
+    }
+}
+@-moz-document url-prefix() { 
+   .statutory ul li {
+        height: 75px;
+        line-height: 65px;
+        padding-left: 65px;
+        background-size: 9%;
+    }
+}
+@media screen and (max-width: 415px) {
+    .logo {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 415px) {
+    .logo {
+        width: 100%;
+    }
+}

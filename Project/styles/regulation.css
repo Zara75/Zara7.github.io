@@ -1,13 +1,16 @@
+.footer {
+    margin: 0;
+}
 .regulation_background {
     height: 47vh;
     background: url(../images/regualtion_background.jpg);
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
+    background-size: 100% 100%;
+    padding: 0;
 }
 .regulation_background span {
     height: 230px;
-    width: 512px;
+    width: 40%;
     display: inline-block;
     margin-top: 18vh;
 }
@@ -32,10 +35,10 @@
     height: 100px;
     list-style: none;
     background-image: url(../images/blue_pdf.png);
-    background-size: 50px 55px;
+    background-size: 45px 50px;
     background-repeat: no-repeat;
-    line-height: 60px;
-    padding-left: 80px;
+    line-height: 52px;
+    padding-left: 55px;
 }
 .lows ul li a {
     font-size: 180%;
@@ -45,4 +48,57 @@
     background-image: url('../images/dimension_pattern.png');
     background-repeat: no-repeat;
     background-position: right;
+    background-position: right center;
+    background-size: 12% 100%;
+}
+@media screen and (max-width: 992px) {
+   sidebar {
+       position: static;
+       box-shadow: none;
+    }
+    .services_background {
+        height: 10%;
+        background-position: top;
+    }
+    .services_background span {
+        margin-top: 7vh;
+    }
+}
+@media screen and (max-width: 767px) {
+    .regulation_background {
+        height: 35vh;
+    }
+    .regulation_background span {
+        width: 100%;
+        margin-top: 0;
+    }
+    .dimension_pattern {
+        background-image: none;
+    }
+    .lows h2 {
+        font-size: 190%;
+    }
+    .lows p {
+        font-size: 85%;
+        margin-bottom: 10%;
+    }
+    .lows ul li {
+        height: 60px;
+        background-size: 20px 25px;
+        line-height: 25px;
+        padding-left: 25px;
+    }
+    .lows ul li a {
+        font-size: 80%;
+    }
+}
+@media screen and (min-width: 980px) and (max-width: 1350px){
+    .regulation_background span {
+        width: 75%;
+    }
+}
+@media screen and (min-width: 1350px) and (max-width: 1440px){
+    .regulation_background span {
+        width: 55%;
+    }
 }

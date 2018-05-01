@@ -6,20 +6,20 @@ sidebar {
     -webkit-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.4);
     box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.4);
-/*
-    position: static;
-    height: 100%;
-*/
+}
+.footer {
+    margin: 0;
 }
 .investors_background {
     background: url(../images/investors_background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2% 0;
+    padding: 2% 0 15% 0;
 }
 .investors_background span {
     height: 230px;
+    width: 100%;
     display: inline-block;
     margin-top: 40vh;
 }
@@ -27,10 +27,15 @@ sidebar {
     background: #469fcc;
     padding: 8% 0;
 }
-.reports span {
+.reports span:nth-of-type(1) {
     font-family: Ailerons;
     font-size: 225%;
-    padding-right: 5%;
+    padding-right: 2%;
+    float: left;
+}
+.reports span:nth-of-type(2) {
+    display: inline-block;
+    margin-top: 0.7%;
 }
 .reports ul {
     margin-top: 7%;
@@ -39,17 +44,18 @@ sidebar {
     height: 100px;
     list-style: none;
     background-image: url(../images/pdf_icon.png);
-    background-size: 50px 55px;
+    background-size: 40px 45px;
     background-repeat: no-repeat;
-    line-height: 40px;
-    padding-left: 80px;
+    line-height: 32px;
+    padding-left: 55px;
 }
 .reports a {
-    font-size: 180%;
+    font-size: 130%;
     color: #ffffff;
 }
 .int_regulations {
-    padding: 7% 0;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 .int_regulations h2 {
     display: block;
@@ -65,6 +71,8 @@ sidebar {
     background-image: url('../images/dimension_pattern.png');
     background-repeat: no-repeat;
     background-position: right;
+    background-position: right center;
+    background-size: 12% 100%;
 }
 .grey_line {
     margin-top: 5%; 
@@ -89,14 +97,13 @@ sidebar {
      display: inline-block;
      font-family: GOTHICB;
      font-size: 115%;
-     padding-right: 2%;
+     padding: 0 2%;
 }
 .financial {
     background: #00314b;
     color: #ffffff;
 }
 .financial h2 {
-    font-size: 250%;
     margin: 5% 0;
 }
 .financial h4 {
@@ -110,13 +117,17 @@ sidebar {
     height: 100px;
     list-style: none;
     background-image: url(../images/pdf_icon.png);
-    background-size: 50px 55px;
+    background-size: 40px 45px;
     background-repeat: no-repeat;
-    line-height: 62px;
-    padding-left: 80px;
+    line-height: 45px;
+    padding-left: 55px;
 }
-.financial span {
+.financial span:nth-of-type(1) {
     padding-right: 2%;
+}
+.financial span:nth-of-type(2) {
+    display: inline-block;
+    margin-top: 0.7%;
 }
 .financial a {
     font-size: 180%;
@@ -150,7 +161,8 @@ hr {
 }
 .management {
     background-color: #ffffff;
-    padding: 5% 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .management h2{
     font-family: GOTHICB;
@@ -159,10 +171,10 @@ hr {
     height: 70px;
     list-style: none;
     background-image: url(../images/xslx.png);
-    background-size: 68px 55px;
+    background-size: 45px 45px;
     background-repeat: no-repeat;
-    line-height: 60px;
-    padding-left: 80px;
+    line-height: 45px;
+    padding-left: 55px;
 }
 .management ul li a {
    font-size: 120%;
@@ -175,6 +187,41 @@ hr {
 .management p:nth-of-type(1) {
    margin-top: 3%;
 }
+
+@media screen and (max-width: 1200px) {
+  hr {
+        width: 500px;
+    }
+    .square {
+        height: 80px;
+        width: 80px;
+        right: -18%;
+    }
+    .small_square {
+        height: 30px;
+        width: 30px;
+        right: -7%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1800px){
+    .reports span:nth-of-type(2) {
+        margin-top: 1%;
+    }
+}
+  hr {
+        width: 500px;
+    }
+    .square {
+        height: 80px;
+        width: 80px;
+        right: -18%;
+    }
+    .small_square {
+        height: 30px;
+        width: 30px;
+        right: -7%;
+    }
+}
 @media screen and (max-width: 992px) {
    sidebar {
        box-shadow: none;
@@ -184,5 +231,73 @@ hr {
     }
     .investors_background span {
         margin-top: 15vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .investors_background span {
+        width: 100%;
+        margin-top: 0;
+    }
+    .dimension_pattern {
+        background-image: none;
+    }
+    .blue_header {
+        font-size: 190%;
+    }
+    .reports ul li {
+        height: 60px;
+        background-size: 20px 25px;
+        line-height: 20px;
+        padding-left: 25px;
+    }
+    .reports a {
+        font-size: 80%;
+    }
+    .reports span:nth-of-type(1) {
+        font-size: 220%;
+        padding-right: 5%;
+    }
+    .reports span:nth-of-type(2) {
+        margin-top: 2%;
+    }
+    .int_regulations h2 {
+        font-size: 150%;
+    }
+    .int_regulations p {
+        font-size: 65%;
+    }
+    .decision div:nth-of-type(1) span {
+        font-size: 65%;
+    }
+    .financial h4 {
+        font-size: 100%;
+    }
+    .square_wrapper {
+        display: none;
+    }
+    .financial ul li {
+        height: 60px;
+        background-size: 20px 25px;
+        line-height: 25px;
+        padding-left: 25px;
+    }
+    .financial span:nth-of-type(1) {
+        font-size: 180%;
+    }
+    .financial a {
+        font-size: 80%;
+    }
+    .management h2 {
+        font-size: 125%;
+    }
+    .management ul li {
+        height: 60px;
+        background-size: 20px 25px;
+        line-height: 25px;
+        padding-left: 25px;
+    }
+    .management p {
+        font-size: 80%;
     }
 }

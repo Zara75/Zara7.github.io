@@ -2,13 +2,12 @@ sidebar {
     -webkit-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.4);
     box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.4);
-/*
-    position: static;
-    height: 100%;
-*/
+}
+.footer {
+    margin: 0;
 }
 .individuals {
-/*    height: 40vh;*/
+    height: 40vh;
     color: #001f2f;
     padding: 3% 0;
 }
@@ -61,27 +60,73 @@ h4 {
 	display: flex;
     align-items: center;
     font-size: 160%;
+    padding-left: 5%;
 }
-.individuals span:before {
-	content: '';
-    display: inline-block;
-    height: 75px;
-    width: 60px;
+ .icon0 {
+    height: 70px;
+    display: flex;
     background: url(../images/blue_pdf.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
+    background-size: 4%;
 }
- .legal_entitles span:before {
-	content: '';
-    display: inline-block;
-    height: 75px;
-    width: 60px;
+ .icon1 {
+    height: 70px;
+    display: flex;
     background: url(../images/pdf_icon.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
+    background-size: 4%;
 }
-/*
-.individuals span img, .legal_entitles span img {
-	float: left;
-    padding: 2%;
-}*/
+@media screen and (max-width: 768px) {
+.individuals {
+    height: 65vh;
+}
+.individuals hr {
+    border: 1px solid #001f2f;
+}
+.legal_entitles {
+    height: 100vh;
+}
+.legal_entitles hr {
+    border: 1px solid #ffffff;
+}
+.individuals h2 {
+    font-size: 160%;
+}
+h4 {
+    font-size: 115%;
+    font-family: GOTHICB;
+    line-height: 1;
+}
+    .individuals span, .legal_entitles span {
+    font-size: 100%;
+}
+}
+@media screen and (min-width: 768px) {
+    .individuals {
+       transition: all 1s linear;
+    }
+    .legal_entitles {
+       transition: all 1s linear;
+    }
+    .individuals:hover {
+       transform: translate3d(100px, 100px, -200px);
+       height: 70vh;
+       
+    }
+    .legal_entitles:hover {
+       transform: translate3d(100px, 100px, -200px);
+       height:  90vh;  
+    }
+    
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .individuals span, .legal_entitles span {
+        padding-left: 7%;
+    }
+    .icon1, .icon0 {
+        background-size: 6%;
+    }
+}
+
