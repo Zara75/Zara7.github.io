@@ -80,13 +80,13 @@ h4 {
 }
 @media screen and (max-width: 768px) {
 .individuals {
-    height: 65vh;
+    height: 70vh;
 }
 .individuals hr {
     border: 1px solid #001f2f;
 }
 .legal_entitles {
-    height: 100vh;
+    height: 105vh;
 }
 .legal_entitles hr {
     border: 1px solid #ffffff;
@@ -127,6 +127,12 @@ h4 {
     }
     .icon1, .icon0 {
         background-size: 6%;
+    }
+    .individuals:hover {
+       transform: translate3d(50px, 50px, -100px);
+    }
+    .legal_entitles:hover {
+       transform: translate3d(50px, 50px, -100px);
     }
 }
 

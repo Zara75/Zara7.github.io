@@ -159,7 +159,8 @@ footer img {
     height: 230px;
     width: 40%;
     display: inline-block;
-    margin-top: 50vh;
+/*        margin-top: 50vh;*/
+    margin: 40% 0 30% 0;
 }
 .white_header  {
     font-family: GOTHICB;
@@ -433,13 +434,16 @@ button p:nth-of-type(2) {
         background: #001f2f;
     }
     .about_background {
-        height: 50vh;
+        height: 35vh;
         background-position: center center;
         background-size: 100% 100%; 
     }
     .about_background span {
         width: 100%;
         margin-top: 2vh;
+    }
+    .grey_line {
+        height: 3px;
     }
     .white_header {
         font-size: 190%;
@@ -454,7 +458,7 @@ button p:nth-of-type(2) {
         font-size: 75%;
     }
     .theam_background {
-        height: 50vh;
+        height: 35vh;
         padding: 0;
         background-position: center center;
         background-size: 100% 100%;
@@ -473,7 +477,7 @@ button p:nth-of-type(2) {
         width: 100%;
     }
     .organization_background {
-        height: 50vh;
+        height: 35vh;
         padding: 0;
         background-position: center center;
         background-size: 100% 100%;
@@ -523,21 +527,21 @@ button p:nth-of-type(2) {
     }
     .about_background span {
         width: 65%;
-        margin-top: 35vh;
+/*        margin-top: 55vh;*/
     }
     .theam_background {
          background-size: 100% 100%;
     }
     .theam_background span {
         width: 60%;
-        margin-top: 15vh;
+        margin-top: 25vh;
 }
     .organization_background {
          background-size: 100% 100%;
     }
     .organization_background span {
          width: 60%;
-         margin-top: 9vh;
+         margin-top: 20vh;
     }
 }
 @media screen and (min-width: 550px) and (max-width: 980px){
@@ -589,7 +593,7 @@ button p:nth-of-type(2) {
 }
 @media screen and (min-width: 1440px) {
     header {
-        margin-bottom: 30%;
+        margin-bottom: 43%;
     }
     .lang_bar {
          margin: 7% 0 20% 0%;
