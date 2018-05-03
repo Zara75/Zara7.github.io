@@ -66,7 +66,6 @@ textarea:focus, input:focus, button:focus {
     font-weight: bold;
 }
 header {
-/*    margin-left: 17%;*/
     margin-bottom: 10%;
 }
 header ul {
@@ -109,6 +108,7 @@ header a:hover {
 }
 .navbar-default .navbar-toggle {
     border-color: #48a3d3;
+    float: left;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fefefe;
@@ -149,7 +149,6 @@ footer img {
     font-family: GOTHIC;
 }
 .about_background {
-    height: 100vh;
     background: url(../images/main_background.png);
     background-position: top right;
     padding: 0;
@@ -159,7 +158,6 @@ footer img {
     height: 230px;
     width: 40%;
     display: inline-block;
-/*        margin-top: 50vh;*/
     margin: 40% 0 30% 0;
 }
 .white_header  {
@@ -195,30 +193,27 @@ footer img {
     font-weight: 500;
 }
 .theam_background {
-    height: 65vh;
     background: url(../images/team_background.png);
     background-position: top right;
-    padding: 0;
+    padding: 10% 0;
     background-size: 75% 100%;
 }
 .theam_background span {
     height: 230px;
     width: 40%;
     display: inline-block;
-    margin-top: 15vh;
+/*    margin-top: 15vh;*/
 }
 .organization_background {
-    height: 60vh;
     background: url(../images/oraganization_background.png);
     background-position: top right;
-    padding: 0;
+    padding: 10% 0;
     background-size: 75% 100%;
 }
 .organization_background span {
     height: 230px;
     width: 40%;
     display: inline-block;
-    margin-top: 15vh;
 }
 .carousel-control.left {
     background: none;
@@ -356,7 +351,6 @@ button p:nth-of-type(2) {
 .parallax {
     background-attachment: fixed;
     background-repeat: no-repeat;
-/*    background-size: cover;*/
 }
 .mobile {
     display: none;
@@ -394,18 +388,19 @@ button p:nth-of-type(2) {
 }
 @media screen and (max-width: 767px) {
     .lang_bar {
-        height: 26px;
-        width: 25%;
+        height: 30px;
+        width: 30%;
         float: right;
         font-size: 75%;
-        margin: 22% 0 10% 0%;
+        margin: 0;
     }
     .logo_wrapper {
+        height: 90px;
+        width: 50%;
         background: url(../images/contact_page_logo.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 20%;
-        margin-top: 5%;
+        background-size: 25%;
     }
     .logo_wrapper a {
         display: block;
@@ -414,15 +409,23 @@ button p:nth-of-type(2) {
         margin: 0;
     }
     .navbar-default {
-        top: -85px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0;
     }
     .navbar-header {
-        width: 6%;
-        display: inline-flex;
-        top: -85px;
+        width: 20%;
     }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-        margin-top: 10%;
+        width: 90%;
+        margin: 0 auto;
+/*        margin-top: 10%;*/
+    }
+    .navbar-toggle {
+        margin: 0;
     }
     .row3 p {
         font-size: 55%;
@@ -433,13 +436,8 @@ button p:nth-of-type(2) {
         background: #001f2f;
     }
     .about_background {
-        height: 35vh;
         background-position: center center;
         background-size: 100% 100%; 
-    }
-    .about_background span {
-        width: 100%;
-        margin-top: 2vh;
     }
     .grey_line {
         height: 3px;
@@ -457,14 +455,8 @@ button p:nth-of-type(2) {
         font-size: 75%;
     }
     .theam_background {
-        height: 35vh;
-        padding: 0;
         background-position: center center;
         background-size: 100% 100%;
-    }
-    .theam_background span {
-        width: 100%;
-        margin-top: 2vh;
     }
     .theam_background h4 {
         font-size: 190%;
@@ -476,14 +468,8 @@ button p:nth-of-type(2) {
         width: 100%;
     }
     .organization_background {
-        height: 35vh;
-        padding: 0;
         background-position: center center;
         background-size: 100% 100%;
-    }
-    .organization_background span {
-        width: 100%;
-        margin-top: 2vh;
     }
     .statutory h2 {
         font-size: 190%;
@@ -517,7 +503,7 @@ button p:nth-of-type(2) {
         width: 40%;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 980px){
+@media screen and (min-width: 480px) and (max-width: 980px){
     .row2 img:nth-of-type(1) {
         width: 25%;
     }
@@ -526,29 +512,26 @@ button p:nth-of-type(2) {
     }
     .about_background span {
         width: 65%;
-/*        margin-top: 55vh;*/
     }
     .theam_background {
          background-size: 100% 100%;
     }
     .theam_background span {
         width: 60%;
-        margin-top: 25vh;
 }
     .organization_background {
          background-size: 100% 100%;
     }
     .organization_background span {
          width: 60%;
-         margin-top: 20vh;
     }
 }
-@media screen and (min-width: 550px) and (max-width: 980px){
+@media screen and (min-width: 550px) and (max-width: 1000px){
      .lang_bar {
         width: 20%;
     }
 }
-@media screen and (min-width: 980px) and (max-width: 1439px){
+@media screen and (min-width: 1000px) and (max-width: 1439px){
      .lang_bar {
         width: 50%;
     }
@@ -569,15 +552,6 @@ button p:nth-of-type(2) {
         background-position: center right;
         background-size: 75% 100%;
     }
-/*
-    .theam_background {
-        background-position: center right;
-        background-size: 75% 75%;
-    }
-    .theam_background span {
-        margin-top: 15vh;
-    }
-*/
 }
 @media screen and (min-width: 1350px) and (max-width: 1440px){
       .about_background span {
@@ -607,5 +581,17 @@ button p:nth-of-type(2) {
         line-height: 65px;
         padding-left: 65px;
         background-size: 9%;
+    }
+}
+@media screen and  (max-width: 480px){
+    .about_background span {
+        width: 100%;
+        margin: 0% 0 15% 0;
+    }
+     .theam_background span {
+        width: 100%;
+    }
+    .organization_background span {
+        width: 100%;
     }
 }

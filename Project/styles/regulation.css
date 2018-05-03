@@ -2,17 +2,15 @@
     margin: 0;
 }
 .regulation_background {
-    height: 47vh;
     background: url(../images/regualtion_background.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 0;
+    padding: 10% 0;
 }
 .regulation_background span {
     height: 230px;
     width: 40%;
     display: inline-block;
-    margin-top: 18vh;
 }
 .lows {
     padding: 5% 0 20% 0;
@@ -60,17 +58,10 @@
         height: 10%;
         background-position: top;
     }
-    .services_background span {
-        margin-top: 7vh;
-    }
 }
 @media screen and (max-width: 767px) {
-    .regulation_background {
-        height: 35vh;
-    }
     .regulation_background span {
         width: 100%;
-        margin-top: 0;
     }
     .dimension_pattern {
         background-image: none;
