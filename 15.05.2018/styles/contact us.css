@@ -1,0 +1,131 @@
+.footer {
+    margin: 0;
+}
+.contact_us {
+    padding: 5% 0;
+    box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.4);
+    z-index: 1;
+}
+.contact_us h2 {
+    font-family: GOTHICB;
+    font-size: 250%;
+    color: #469fcc;
+}
+form * {
+    margin: 3% 0;
+}
+form button {
+    color: #ffffff;
+    background: #469fcc;
+}
+.btn:hover {
+    color: #b9b3b3;
+}
+textarea {
+    resize: none;
+}
+.map {
+    height: 100vh;
+    background: url(../images/map_background.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+.info {
+    margin-top: 50%;
+}
+.info table {
+    margin: 2% 0;
+}
+.info table th {
+    vertical-align: top;
+    padding-right: 5%;
+}
+.info a {
+   text-align: right;
+}
+.talkbubble  {
+   width: 255px;
+   height: 350px;
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   background: #001f2f;
+   border-radius: 5px;
+}
+.talkbubble:before {
+    content: "";
+    height: 0;
+    width: 0;
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+	border-left: 26px solid transparent;
+	border-right: 26px solid transparent;
+	border-top: 20px solid #001f2f;
+}
+figure {
+    width: 100%;
+    text-align: center;
+}
+figure img {
+    width: 25%;
+    display: inline-block;
+}
+.address {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ffffff;
+    text-align: justify;
+    line-height: 1;
+}
+.address span {
+    width: 100%;
+    display: inline-block;
+    font-weight: bold;
+}
+.talkbubble p:nth-of-type(1) {
+   font-family: GOTHICB;
+}
+.get_directions {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 120%;
+    border: 2px solid #ffffff;
+}
+@media screen and (max-width: 992px) {
+    .info {
+        margin-top: 0;
+        padding: 0;
+    }
+    .contact_us {
+        height: 10%;
+        box-shadow: none;
+    }
+    .talkbubble {
+        width: 155px;
+        height: 200px;
+    }
+    .talkbubble:before {
+        border-left: 13px solid transparent;
+        border-right: 13px solid transparent;
+        border-top: 10px solid #001f2f;
+    }
+    .address {
+        font-size: 65%;
+    }
+    .get_directions {
+        height: 30px;
+        font-size: 85%;
+    }
+}
